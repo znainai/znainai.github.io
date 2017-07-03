@@ -1,0 +1,19 @@
+title: ЗНАЙ-НАЙ
+description:
+  Курсове по математика за кандидат-гимназисти, които включват индивидуални
+  занимания и представят учебния материал по лесен и достъпен начин без стреса
+  на училищната обстановка.
+google_analytics:
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

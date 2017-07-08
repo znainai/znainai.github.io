@@ -18,12 +18,13 @@
 
         <nav class="menu">
           <ul>
-            <li><a href="{{ 'about-us' }}">За нас</a></li>
-            <li><a href="{{ 'course' }}">Курс</a></li>
-            <li><a href="{{ 'schedule' }}">График</a></li>
-            <li><a href="{{ 'prices' }}">Цени</a></li>
-            <li><a href="{{ 'feedback' }}">Отзиви</a></li>
-            <li><a href="{{ 'contacts' }}">Контакти</a></li>
+            {% for item in site.data.navigation %}
+              <li>
+                <a {% if page.url contains item.url %}class="active"{% endif %}
+                  href="{{ item.url }}">{{ item.name }}</a>
+              </li>
+            {% endfor %}
+
             <li class="right"><a target="_blank" href="https://goo.gl/forms/kxwWFMP1rajArPHv1">Записване</a></li>
           </ul>
         </nav>

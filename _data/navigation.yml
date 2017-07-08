@@ -1,0 +1,12 @@
+- name: За нас
+  url: about-us
+- name: Курс
+  url: course
+- name: График
+  url: schedule
+- name: Цени
+  url: prices
+- name: Отзиви
+  url: feedback
+- name: Контакти
+  url: contacts

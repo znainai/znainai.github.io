@@ -17,3 +17,5 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
+sign_form: https://goo.gl/forms/kxwWFMP1rajArPHv1

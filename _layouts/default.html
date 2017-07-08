@@ -9,31 +9,34 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <header class="page-header">
-      <img class="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
-      <h1 class="project-name">{{ site.title }}</h1>
+    <div id="main-container">
+      <header id="main-header">
+        <a href="{{ 'index' }}">
+          <img class="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
+          <h1 class="project-name">{{ site.title }}</h1>
+        </a>
 
-      <nav class="menu">
-        <ul>
-          <li><a href="{{ 'index' }}">Начало</a></li>
-          <li><a href="{{ 'about-us '}}">За нас</a></li>
-          <li><a href="#">Курс</a></li>
-          <li><a href="#">Отзиви</a></li>
-          <li><a href="#">Цени</a></li>
-          <li><a href="#">График</a></li>
-          <li><a href="#">Контакти</a></li>
-          <li class="right"><a target="_blank" href="https://goo.gl/forms/kxwWFMP1rajArPHv1">Записване</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav class="menu">
+          <ul>
+            <li><a href="{{ 'about-us' }}">За нас</a></li>
+            <li><a href="{{ 'course' }}">Курс</a></li>
+            <li><a href="{{ 'schedule' }}">График</a></li>
+            <li><a href="{{ 'prices' }}">Цени</a></li>
+            <li><a href="{{ 'feedback' }}">Отзиви</a></li>
+            <li><a href="{{ 'contacts' }}">Контакти</a></li>
+            <li class="right"><a target="_blank" href="https://goo.gl/forms/kxwWFMP1rajArPHv1">Записване</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <section class="main-content">
-      {{ content }}
-    </section>
+      <section id="main-section">
+        {{ content }}
+      </section>
 
-    <footer class="site-footer">
-      © 2017 Знай-най
-    </footer>
+      <footer id="main-footer">
+        © 2017 Знай-най
+      </footer>
+    </div>
 
     {% if site.google_analytics %}
       <script type="text/javascript">

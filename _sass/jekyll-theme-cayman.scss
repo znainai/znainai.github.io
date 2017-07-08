@@ -310,6 +310,10 @@ a {
 
 .centered-text { text-align: center; }
 
+.centered-table-content {
+  th, td { text-align: center !important; }
+}
+
 .team-member {
   font-style: italic;
   overflow: hidden;

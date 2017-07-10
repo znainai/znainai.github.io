@@ -16,6 +16,8 @@
           <h1 class="project-name">{{ site.title }}</h1>
         </a>
 
+        <a class="enroll-button" target="_blank" href="{{ site.sign_form_link }}">Записване</a>
+
         <nav class="menu">
           <ul>
             {% for item in site.data.navigation %}
@@ -24,8 +26,6 @@
                   href="{{ item.url }}">{{ item.name }}</a>
               </li>
             {% endfor %}
-
-            <li class="right"><a target="_blank" href="{{ site.sign_form_link }}">Записване</a></li>
           </ul>
         </nav>
       </header>

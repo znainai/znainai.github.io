@@ -82,6 +82,26 @@ header#main-header {
     }
   }
 
+  a.enroll-button {
+    background: rgb(34, 150, 255);
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding: 0.5em;
+    text-transform: uppercase;
+    width: 15em;
+    font-family: Arial Black;
+    letter-spacing: 0.1em;
+  }
+
+  a.enroll-button:hover {
+    background: rgb(34, 150, 255);
+    text-decoration: none;
+    box-shadow: 0px 2px 5px #999;
+  }
+
   nav.menu ul {
     list-style-type: none;
     position: relative;
@@ -102,20 +122,7 @@ header#main-header {
         color: #666;
       }
 
-      a:hover,
-      a.active {
-        color: #333;
-      }
-
-      &.right {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      &.right a {
-        color: $body-link-color;
-      }
+      a:hover, a.active { color: #333; }
     }
   }
 }

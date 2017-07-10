@@ -11,9 +11,9 @@
   <body>
     <div id="main-container">
       <header id="main-header">
-        <a href="{{ 'index' }}">
-          <img class="logo" src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
-          <h1 class="project-name">{{ site.title }}</h1>
+        <a class="logo" href="{{ 'index' }}">
+          <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
+          {{ site.title }}
         </a>
 
         <a class="enroll-button" target="_blank" href="{{ site.sign_form_link }}">Записване</a>

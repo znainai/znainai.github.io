@@ -20,6 +20,11 @@
   }
 }
 
+@font-face {
+  font-family: Simbal Regular;
+  src: url("../fonts/simbal-regular.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -40,7 +45,7 @@ body {
 div#main-container {
   position: relative;
   min-height: 100%;
-  margin: 0 auto;
+  margin: auto;
 
   @include large {
     width: 60em;
@@ -60,9 +65,34 @@ header#main-header {
   text-align: center;
   border-bottom: 1px solid #ccc;
 
-  .logo {
-    width: 9em;
-    height: 9em;
+  a.logo {
+    display: inline-block;
+    margin: auto;
+    color: #333;
+    font-size: 1.8em;
+    font-family: Simbal Regular, Helvetica, serif;
+    font-weight: bold;
+    text-align: center;
+
+    img {
+      width: 5em;
+      height: 5em;
+      display: block;
+      margin: auto;
+
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out;
+    }
+  }
+
+  a.logo:hover {
+    text-decoration: none;
+    color: #000;
+
+    img {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
   }
 
   .project-name {

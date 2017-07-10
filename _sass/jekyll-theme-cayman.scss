@@ -47,17 +47,9 @@ div#main-container {
   min-height: 100%;
   margin: auto;
 
-  @include large {
-    width: 60em;
-  }
-
-  @include medium {
-    width: 95%;
-  }
-
-  @include small {
-    width: 95%;
-  }
+  @include large  { width: 60em; }
+  @include medium { width: 95%; }
+  @include small  { width: 95%; }
 }
 
 header#main-header {
@@ -70,9 +62,12 @@ header#main-header {
     display: inline-block;
     margin: auto;
     color: #333;
-    font-size: 1.8em;
     font-weight: bold;
     text-align: center;
+
+    @include large  { font-size: 1.8em; }
+    @include medium { font-size: 1.6em; }
+    @include small  { font-size: 1.4em; }
 
     img {
       width: 5em;
@@ -145,25 +140,13 @@ header#main-header {
 section#main-section {
   padding: 2em 1em 4em;
 
-  @include large {
-    font-size: 1.1em;
-  }
+  @include large  { font-size: 1.1em; }
+  @include medium { font-size: 1.1em; }
+  @include small  { font-size: 1em; }
 
-  @include medium {
-    font-size: 1.1em;
-  }
+  :first-child { margin-top: 0; }
 
-  @include small {
-    font-size: 1em;
-  }
-
-  :first-child {
-    margin-top: 0;
-  }
-
-  img {
-    max-width: 100%;
-  }
+  img { max-width: 100%; }
 
   h1,
   h2,
@@ -176,11 +159,11 @@ section#main-section {
     font-weight: normal;
     color: $section-headings-color;
     font-family: "Simbal Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    @include small { text-align: center; }
   }
 
-  p {
-    margin-bottom: 1em;
-  }
+  p { margin-bottom: 1em; }
 
   code {
     padding: 2px 4px;
@@ -251,10 +234,7 @@ section#main-section {
     }
   }
 
-  ul,
-  ol {
-    margin-top: 0;
-  }
+  ul, ol { margin-top: 0; }
 
   blockquote {
     padding: 0 1rem;
@@ -349,7 +329,6 @@ a {
   .photo {
     width: 12em;
 
-    margin: 0 !important;
     padding: 1em 1em 0 1em;
 
     text-align: center;
@@ -357,7 +336,16 @@ a {
     color: $section-headings-color;
     font-style: normal;
 
+    @include small {
+      display: block;
+      margin: auto;
+    }
+
     &.left  { float: left; }
     &.right { float: right; }
+
+    &.left, &.right {
+      @include small { float: none; }
+    }
   }
 }

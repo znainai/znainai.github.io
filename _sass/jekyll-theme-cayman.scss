@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-family: Simbal Regular;
+  font-family: "Simbal Regular";
   src: url("../fonts/simbal-regular.ttf");
 }
 
@@ -37,7 +37,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -61,6 +61,7 @@ div#main-container {
 }
 
 header#main-header {
+  font-family: "Simbal Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $header-heading-color;
   text-align: center;
   border-bottom: 1px solid #ccc;
@@ -70,7 +71,6 @@ header#main-header {
     margin: auto;
     color: #333;
     font-size: 1.8em;
-    font-family: Simbal Regular, Helvetica, serif;
     font-weight: bold;
     text-align: center;
 
@@ -95,35 +95,19 @@ header#main-header {
     }
   }
 
-  .project-name {
-    color: #333;
-    margin: 0;
-
-    @include large {
-      font-size: 2em;
-    }
-
-    @include medium {
-      font-size: 2em;
-    }
-
-    @include small {
-      font-size: 2em;
-    }
-  }
-
   a.enroll-button {
     background: rgb(34, 150, 255);
     border-radius: 3px;
-    color: #fff;
-    display: block;
-    font-weight: bold;
-    margin: auto;
-    padding: 0.5em;
-    text-transform: uppercase;
     width: 15em;
-    font-family: Arial Black;
+    display: block;
+    margin: auto;
+    margin-top: 0.3em;
+    padding: 0.5em;
+    font-family: Arial Black, Helvetica, sans-serif;
+    font-weight: bold;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
   }
 
   a.enroll-button:hover {
@@ -141,12 +125,13 @@ header#main-header {
     text-align: center;
 
     li {
-      padding: 0.5em;
       display: inline-block;
+      padding: 0 0.4em;
 
       a {
         text-decoration: none;
-        font-size: 0.875em;
+        font-size: 1em;
+        line-height: 3em;
         text-transform: uppercase;
         font-weight: bold;
         color: #666;
@@ -190,6 +175,7 @@ section#main-section {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
+    font-family: "Simbal Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   p {
@@ -330,6 +316,7 @@ section#main-section {
 }
 
 footer#main-footer {
+  font-family: "Simbal Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -351,8 +338,12 @@ a {
   th, td { text-align: center !important; }
 }
 
-.team-member {
+.cursive {
+  font-family: "Simbal Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
+}
+
+.team-member {
   overflow: hidden;
 
   .photo {

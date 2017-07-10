@@ -17,7 +17,7 @@ title: За нас
 
 ## Нашият екип
 
-<div class="team-member">
+<div class="team-member cursive">
   <p class="photo left">
     <img src="{{ "/assets/images/mims.png" }}" alt="Мария Рангелова">
     <br>
@@ -35,7 +35,7 @@ title: За нас
 <hr>
 <br>
 
-<div class="team-member">
+<div class="team-member cursive">
   <p class="photo right">
     <img src="{{ "/assets/images/dani.png" }}" alt="Даниел Джевелеков">
     <br>

@@ -351,6 +351,9 @@ a {
 .centered-text { text-align: center; }
 
 .centered-table-content {
+  display: table !important;
+  margin: auto;
+
   th, td { text-align: center !important; }
 }
 

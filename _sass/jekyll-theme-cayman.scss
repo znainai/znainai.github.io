@@ -368,6 +368,7 @@ a {
     font-style: normal;
 
     @include small {
+      font-size: 1.1em;
       display: block;
       margin: auto;
     }

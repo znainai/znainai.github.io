@@ -13,7 +13,7 @@ title: График
 .tg .tg-yw4l{vertical-align:top}
 .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
 </style>
-<table class="tg">
+<table class="tg" align="center" style="margin: 0px auto;">
   <tr>
     <th class="tg-yw4l"></th>
     <th class="tg-amwm">Група 1<br>събота<br>9:30-12:00</th>

@@ -5,7 +5,7 @@ title: Контакти
 | **Адрес:** | ул. Крум Попов 56-58, betahaus, ет. 2, София |
 | **Телефон:** | +359 886 170 625 |
 | **Е-mail:** | contact[at]znainai.bg |
-| **Facebook:** | <www.facebook.com/znainai.bg> |
+| **Facebook:** | [facebook.com/znainai.bg](https://www.facebook.com/znainai.bg) |
 
 Не се колебайте да се свържете с нас при въпроси и нужда от допълнителна информация.\\
 Очакваме Ви!

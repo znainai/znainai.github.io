@@ -8,6 +8,7 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script src="{{ '/assets/js/app.js' | relative_url }}" charset="utf-8"></script>
   </head>
   <body>
     <div id="main-container">
@@ -19,7 +20,10 @@
 
         <a class="enroll-button" target="_blank" href="{{ site.sign_form_link }}">Записване</a>
 
-        <nav class="menu">
+        <button id="menu-switch" type="button">
+          <span class="fa fa-bars fa-2x" aria-hidden="true"></span>
+        </button>
+        <nav id="menu" class="menu">
           <ul>
             {% for item in site.data.navigation %}
               <li>

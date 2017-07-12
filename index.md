@@ -7,7 +7,7 @@ title: Начало
 
 <div>
   <p class="photo left">
-    <img src="{{ "/assets/images/individual-approach.png" }}" alt="individual approach">
+    <img src="{{ "/assets/images/individual-approach.png" }}" width="128" height="128" alt="individual approach">
     <br>
 Ние вярваме в **индивидуалния** подход към всяко дете. Затова работим в **малки групи** и провеждаме **редовни самостоятелни уроци** с учениците.
 </p>

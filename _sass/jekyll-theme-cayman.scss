@@ -424,3 +424,13 @@ p.info {
     }
   }
 }
+
+.google-map {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+
+  @include large  { width: 50em; height: 30em; }
+  @include medium { width: 40em; height: 30em; }
+  @include small  { width: 15em; height: 10em; }
+}

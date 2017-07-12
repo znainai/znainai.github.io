@@ -6,8 +6,8 @@ title: Начало
 {: .centered-text}
 
 <div class="team-member">
-  <p class="photo right">
-    <img src="{{ "/assets/images/individual-approach.png" }}" alt="индивидуален подход">
+  <p class="photo left">
+    <img src="{{ "/assets/images/individual-approach.png" }}" height="96" width="96" alt="индивидуален подход">
   </p>
 Ние вярваме в <b>индивидуалния подход</b> към всяко дете. Затова работим в <b>малки групи</b> и провеждаме <b>редовни самостоятелни уроци</b> с учениците.
 <br>

@@ -82,7 +82,7 @@ header#main-header {
 
   a.logo:hover {
     text-decoration: none;
-    color: #000;
+    color: $section-headings-color;
 
     img {
       -webkit-transform: rotate(360deg);

@@ -173,13 +173,14 @@ header#main-header {
 }
 
 section#main-section {
-  padding: 2em 1em 4em;
+  padding: 1em 1em 3em;
 
   @include large  { font-size: 1.1em; }
   @include medium { font-size: 1.1em; }
   @include small  { font-size: 1em; }
 
   :first-child { margin-top: 0; }
+  :last-child { margin-bottom: 0; }
 
   img { max-width: 100%; }
 
@@ -386,6 +387,40 @@ a {
 
     &.left, &.right {
       @include small { float: none; }
+    }
+  }
+}
+
+p.info {
+  overflow: hidden;
+  padding-top: 1em;
+
+  img {
+    width: auto;
+    height: 6em;
+  }
+
+  &.icon-on-left {
+    text-align: left;
+
+    img { float: left; margin-right: 1em; }
+  }
+
+  &.icon-on-right {
+    text-align: right;
+
+    img { float: right; margin-left: 1em; }
+  }
+
+  @include small {
+    &.icon-on-left, &.icon-on-right {
+      text-align: left;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
     }
   }
 }

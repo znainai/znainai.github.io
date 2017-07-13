@@ -4,12 +4,16 @@ window.onload = function() {
 }
 
 function initMenuSwitchForMobileVersion() {
-  menu = document.getElementById("menu");
-  menu_switch = document.getElementById("menu-switch");
+  var menu = document.getElementById("menu");
+  var menu_switch = document.getElementById("menu-switch");
 
   toggleMenu = function() {
     menu.classList.toggle("visible");
-    menu_switch.classList.toggle("x");
+    
+    var icons = menu_switch.getElementsByTagName("span");
+    [].forEach.call(icons, function(el) {
+      el.classList.toggle("hidden");
+    });
   }
 
   menu_switch.addEventListener("click", toggleMenu);
@@ -17,9 +21,9 @@ function initMenuSwitchForMobileVersion() {
 }
 
 function disableGoogleMapsSrollToZoom() {
-  map = document.getElementById("map");
+  var map = document.getElementById("map");
   if ( map === null ) { return; }
-  map_container = map.parentNode;
+  var map_container = map.parentNode;
 
   map_container.addEventListener("click", function() {
     map.classList.add("clicked");

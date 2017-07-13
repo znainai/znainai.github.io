@@ -114,28 +114,30 @@ header#main-header {
   }
 
   button#menu-switch {
-    position: absolute;
-    top: 0.5em;
-    right: 0.5em;
-
-    width: 3.2em;
-    height: 3.2em;
-
-    background: url("../images/menu-icon.png") no-repeat 50% 50%;
-    background-size: 3em;
+    background: #ddd;
+    border-radius: 0 0 3px 3px;
     border: none;
     display: none;
+    width: 10em;
+    height: 2em;
+    text-align: center;
+    color: #333;
 
     @include small { display: inline; }
 
-    &.x {
-      background: url("../images/x-icon.png") no-repeat 50% 50%;
-      background-size: 3em;
-    }
+    .hidden { display: none; }
   }
 
   nav.menu {
-    @include small { display: none; }
+    @include small {
+      display: none;
+      position: absolute;
+      top: 2em;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+    }
+
     &.visible { display: inline !important; }
 
     ul {
@@ -152,7 +154,7 @@ header#main-header {
 
         @include small {
           display: block;
-          border-top: 1px solid #ccc;
+          border-bottom: 1px solid #ccc;
         }
 
         a {
@@ -163,7 +165,7 @@ header#main-header {
           font-weight: bold;
           color: #666;
 
-          @include small { display: block; }
+          @include small { display: block; color: #333; }
         }
 
         a:hover, a.active { color: $section-headings-color; }

@@ -13,6 +13,14 @@
   <body>
     <div id="main-container">
       <header id="main-header">
+        <div>
+          <button id="menu-switch" type="button">
+            Меню
+            <span class="fa fa-bars" aria-hidden="true"></span>
+            <span class="fa fa-chevron-up hidden" aria-hidden="true"></span>
+          </button>
+        </div>
+
         <a class="logo" href="{{ 'index' }}">
           <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo">
           {{ site.title }}
@@ -20,7 +28,6 @@
 
         <a class="enroll-button" target="_blank" href="{{ site.sign_form_link }}">Записване</a>
 
-        <button id="menu-switch" type="button"></button>
         <nav id="menu" class="menu">
           <ul>
             {% for item in site.data.navigation %}

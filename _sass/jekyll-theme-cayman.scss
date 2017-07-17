@@ -444,3 +444,39 @@ p.info {
     &.clicked { pointer-events: auto; }
   }
 }
+
+.info-with-icons {
+  td {
+    vertical-align: middle;
+    border: none !important;
+  }
+
+  td.info-left { text-align: left; }
+  td.info-right { text-align: right; }
+
+  td.info-left,
+  td.info-right {
+    @include small {
+      text-align: center;
+      padding-bottom: 2em !important;
+    }
+
+    img {
+      display: none;
+
+      @include small { display: block; margin: auto; }
+    }
+  }
+
+  td.icon {
+    width: 8em;
+    text-align: center;
+
+    @include small { display: none; }
+  }
+
+  img.icon {
+    width: auto;
+    height: 6em;
+  }
+}

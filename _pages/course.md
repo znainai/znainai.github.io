@@ -1,6 +1,7 @@
 ---
-title: Курс
+title: КУРС
 ---
+<meta property="og:image" content="{{ "/assets/images/43289.png" }}" />
 
 ## Какво включва курсът?
 

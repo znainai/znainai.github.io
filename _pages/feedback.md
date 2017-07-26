@@ -19,9 +19,7 @@ title: Отзиви
 <i>- Александра, десетокласничка</i>
 
 </div>
-
 ---
-
 <div class="feedback">
   <p class="photo left">
     <img src="{{ "/assets/images/deo.png" }}" alt="Део">
@@ -30,7 +28,6 @@ title: Отзиви
 <br>
 <i>- Део, петокласник</i>
 </div>
-
 ---
 <div class="feedback">
   <p class="photo right">

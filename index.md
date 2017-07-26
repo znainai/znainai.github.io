@@ -57,6 +57,3 @@ title: Начало
     <td class="icon"></td>
   </tr>
 </table>
-
-Заявете желанието си за записване [ТУК]({{ site.sign_form_link }}){:target="_blank"}!
-{: .centered-text}

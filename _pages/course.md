@@ -1,5 +1,4 @@
 ---
-<meta property="og:image" content="{{ "/assets/images/43289.png" }}" />
 title: КУРС
 ---
 

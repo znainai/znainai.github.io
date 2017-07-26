@@ -1,7 +1,7 @@
 ---
 title: Отзиви
 ---
-<div class="team-member cursive">
+<div class="feedback">
   <p class="photo left">
     <img src="{{ "/assets/images/random.png" }}" alt="Александра">
     <br>

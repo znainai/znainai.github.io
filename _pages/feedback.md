@@ -12,7 +12,7 @@ title: Отзиви
 
 ---
 
-<div class="team-member cursive">
+<div class="feedback">
   <p class="photo left">
     <img src="{{ "/assets/images/deo.png" }}" alt="Део">
   </p>

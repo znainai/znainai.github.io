@@ -393,6 +393,34 @@ a {
   }
 }
 
+.feedback {
+  overflow: hidden;
+
+  .photo {
+    width: 5em;
+
+    padding: 1em 1em 0 1em;
+
+    text-align: center;
+    font-size: 1.5em;
+    color: $section-headings-color;
+    font-style: normal;
+
+    @include small {
+      font-size: 1.1em;
+      display: block;
+      margin: auto;
+    }
+
+    &.left  { float: left; }
+    &.right { float: right; }
+
+    &.left, &.right {
+      @include small { float: none; }
+    }
+  }
+}
+
 p.info {
   overflow: hidden;
   padding-top: 1em;

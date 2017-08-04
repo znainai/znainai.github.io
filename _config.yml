@@ -17,5 +17,11 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 sign_form_link: https://goo.gl/forms/kxwWFMP1rajArPHv1

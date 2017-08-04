@@ -1,5 +1,7 @@
 - name: За нас
   url: about-us
+# - name: Новини
+#   url: news
 - name: Курс
   url: course
 - name: График
